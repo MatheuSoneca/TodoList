@@ -1,0 +1,29 @@
+header {
+  padding: 5px;
+}
+
+main {
+  margin: 1rem 0;
+  height: 80vh;
+  padding: 5px;
+
+}
+input {
+  margin: 0 0 20px 0;
+}
+p {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.taskItem {
+  height: 20px;
+  width: 300px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
