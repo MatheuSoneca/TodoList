@@ -2,15 +2,30 @@ header {
   padding: 5px;
 }
 
-main {
-  margin: 1rem 0;
-  height: 80vh;
+.main {
+  margin-bottom: 1rem;
   padding: 5px;
+}
 
+.containerInput {
+  display: flex;
+
+  align-items: center;
+  height: 3rem;
+  width: 19.5rem;
+  margin-bottom: 1rem;
 }
+
+#buttonTask {
+  height: 31px;
+}
+
 input {
-  margin: 0 0 20px 0;
+  height: 25px;
+  flex: 1;
+  margin-right: 0.5rem;
 }
+
 p {
   margin: 0;
 }
@@ -25,5 +40,11 @@ p {
   margin: 5px 0;
   display: flex;
   justify-content: space-between;
-  
+
+  border: black 1px solid;
+  padding: 6px;
+}
+
+.taskItem button {
+  margin-right: 1rem;
 }

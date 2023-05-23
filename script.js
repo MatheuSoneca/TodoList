@@ -9,6 +9,10 @@ const removeTask = (id) => {
   taskItem.remove()
 }
 
+const validateString = (string) => {
+  return string.trim() !== ""
+}
+
 const createTask = (textInput) => {
   const newTaskItem = templateTaskItem.cloneNode(true)
   const textElement = newTaskItem.querySelector("p")
@@ -23,7 +27,7 @@ const createTask = (textInput) => {
 }
 
 buttonCreateTask.onclick = () => {
+  if (!validateString(taskInput.value)) return
   createTask(taskInput.value)
   taskInput.value = ""
 }
-
